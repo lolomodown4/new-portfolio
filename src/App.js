@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import LandingPageInfo from "./components/LandinPage.js";
+import About from "./components/About.js";
+import Projects from "./components/Projects.js";
+import ContactForm from "./components/ContactForm.js";
+
+import Sent from "./components/Sent";
+
+/* useContext */
+import { useGlobalContext } from "./hooks/AppContext";
 
 function App() {
+  const { darkMode } = useGlobalContext();
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classNames(darkMode ? "dark" : "", "scroll-smooth")}>
+      <main className=" bg-slate-100 dark:bg-gradient-to-r dark:from-slate-900 dark:to-black  ">
+        <Navbar />
+        <LandingPageInfo />
+        <About />
+        <Projects />
+        <ContactForm />
+      </main>
     </div>
   );
 }
