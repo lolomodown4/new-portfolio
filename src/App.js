@@ -4,8 +4,6 @@ import About from "./components/About.js";
 import Projects from "./components/Projects.js";
 import ContactForm from "./components/ContactForm.js";
 
-import Sent from "./components/Sent";
-
 /* useContext */
 import { useGlobalContext } from "./hooks/AppContext";
 

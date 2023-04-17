@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
-import design from "../images/design.png";
+/* import design from "../images/design.png";
 import code from "../images/code.png";
-import consulting from "../images/consulting.png";
+import consulting from "../images/consulting.png"; */
 
 const About = () => {
   return (
@@ -12,22 +12,28 @@ const About = () => {
         <h3 className="text-3xl py-2 text-black dark:text-white transition ease-linear delay-150">
           About Me
         </h3>
-        <p className="text-md py-2 leading-8 text-black dark:text-white transition ease-linear delay-150">
-          Since Elementary I do have the passion about computers. Then as
-          growing up I get more curios and curios about it so that's the reason
-          I take computer related course in college. <br />
-          Computer Engineering is the course that I take because it helps me
-          understand about Hardware and Software side of the computer.
-        </p>
-        <p className="text-md py-2 leading-8 text-black dark:text-white transition ease-linear delay-150 ">
-          Here are additional info about me
+        <div className="text-md py-2 leading-8 text-black dark:text-white transition ease-linear delay-150">
+          <p>
+            Since Elementary I do have the passion about computers. I tend to
+            play for hours in computer shops and got more curious on how the
+            computer works then it became the reason I take computer related
+            course in college.
+          </p>
+
+          <p className="mt-5">
+            Computer Engineering is the course that I take because it helps me
+            understand about Hardware and Software side of the computer.
+          </p>
+        </div>
+        <p className="text-md mt-5 leading-8 text-black dark:text-white transition ease-linear delay-150 ">
+          Additional info :
         </p>
       </div>
 
       <div className="md:grid md:grid-cols-2 md:gap-10">
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:border border-white">
+        <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:border border-white">
           <div className="flex justify-center">
-            <img src={design} width={100} height={100} alt="design" />
+            <img src="./design.png" width={100} height={100} alt="design" />
           </div>
 
           <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white transition ease-linear delay-150">
@@ -54,9 +60,9 @@ const About = () => {
           </p>
         </div>
 
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:border border-white">
+        <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:border border-white">
           <div className="flex justify-center">
-            <img src={consulting} width={100} height={100} alt="design" />
+            <img src="./consulting.png" width={100} height={100} alt="design" />
           </div>
 
           <h3 className="text-lg font-medium pt-8 pb-2 text-black dark:text-white transition ease-linear delay-150">
@@ -70,7 +76,7 @@ const About = () => {
             sailing journey but I know that in the end all things will be
             fruitful if we just stick to the process of learning.
           </p>
-          <h4 className="py-4 text-teal-600">Challenges</h4>
+          <h4 className="py-4 text-teal-600">Related to Tech learnings</h4>
           <p className="text-gray-800 py-1 dark:text-white transition ease-linear delay-150">
             Hardware (Microcontroller)
           </p>
@@ -85,15 +91,16 @@ const About = () => {
 
       <div>
         <h3 className="text-3xl text-black dark:text-white">Work Experience</h3>
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:border border-white">
+        <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:border border-white">
           <div className="flex justify-center">
-            <img src={code} width={100} height={100} alt="design" />
+            <img src="./code.png" width={100} height={100} alt="design" />
           </div>
 
           <p className="py-2 text-black dark:text-white transition ease-linear delay-150">
-            I do have a 4 months of working Experience as a Software Engineer in
-            an internal management of of their products and passing of important
-            documents through the website
+            Right now, I do have 4 months of working Experience as a Software
+            Engineer. The app is an internal management system of the client's
+            products where their branches can order supplies to their warehouse
+            and also can pass important document through the web app.
           </p>
 
           <p className="py-2  text-black dark:text-white transition ease-linear delay-150">
@@ -103,22 +110,22 @@ const About = () => {
 
           <h4 className="py-4 text-teal-600">Tech Stack used</h4>
           <p className="text-gray-800 py-1 dark:text-white transition ease-linear delay-150">
-            React
+            BitBucket (source control)
+          </p>
+          <p className="text-gray-800 py-1 dark:text-white transition ease-linear delay-150">
+            Jira (issue tracking and project management)
           </p>
           <p className="text-gray-800 py-1 dark:text-white transition ease-linear delay-150">
             Redux
           </p>
           <p className="text-gray-800 py-1 dark:text-white transition ease-linear delay-150">
-            tailwind
+            React
           </p>
           <p className="text-gray-800 py-1 dark:text-white transition ease-linear delay-150">
             Typescript
           </p>
           <p className="text-gray-800 py-1 dark:text-white transition ease-linear delay-150">
-            BitBucket (source control)
-          </p>
-          <p className="text-gray-800 py-1 dark:text-white transition ease-linear delay-150">
-            Jira (issue tracking and project management)
+            Tailwind
           </p>
         </div>
       </div>

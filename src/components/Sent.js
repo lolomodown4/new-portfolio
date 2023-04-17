@@ -20,9 +20,6 @@ const Sent = () => {
 
   return (
     <div className="App">
-      {/* <button onClick={() => setModalOpen(!modalOpen)} className="text-white">
-        MODAL
-      </button> */}
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}

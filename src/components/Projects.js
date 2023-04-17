@@ -1,25 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
-/* import web1 from "../images/web1.png";
-import web2 from "../images/web2.png";
-import web3 from "../images/web3.png";
-import web4 from "../images/web4.png";
-import web5 from "../images/web5.png";
-import web6 from "../images/web6.png"; */
-
-import pic1 from "../project pics/sample sign up form.png";
-import pic2 from "../project pics/sample dashboard.png";
-import pic3 from "../project pics/Team Member tracker.png";
-import pic4 from "../project pics/Ingredients.png";
-import pic5 from "../project pics/stock tracker.png";
-import pic6 from "../project pics/youtube clone.png";
-
 const Projects = () => {
   const imgClass =
     "block w-full object-cover object-center hover:scale-110 transition ease-in-out delay-150 rounded-md";
   const contentClass =
-    "absolute inset-0 text-center p-5 text-white bg-black-rgba dark:bg-white-rgba dark:text-black  flex justify-center items-center transition ease-in-out delay-200 opacity-0 hover:opacity-100 rounded-md";
+    "absolute inset-0 text-center p-5 text-white bg-black-rgba dark:bg-white-rgba dark:text-black  flex justify-center items-center transition ease-in-out delay-200 opacity-0 hover:opacity-100 rounded-md flex-wrap overflow-auto";
   return (
     <section className="px-10 md:px-20 lg:px-40 ">
       <div>
@@ -32,34 +18,48 @@ const Projects = () => {
           React.
         </p>
         <p className="text-md py-2 leading-8 text-black dark:text-white ">
-          Here are my done projects
+          Here are my some of my done projects :
         </p>
       </div>
 
       <div className="grid grid-cols-1 gap-10">
         {/* html and css */}
-        <div className="py-4 shadow-lg p-10 rounded-lg ">
+        <div className="py-4 shadow-xl dark:shadow-none p-10 rounded-lg ">
           <h1 className="text-3xl text-center pb-4 dark:text-white">
             HTML and CSS basics
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="relative overflow-hidden cursor-pointer ">
-              <a href="https://youtube.com">
-                <img src={pic1} alt="web1" className={imgClass} />
+              <a href="https://sample-signupform.netlify.app">
+                <img
+                  src="./sample sign up form.png"
+                  alt="web1"
+                  className={imgClass}
+                />
                 <div className={contentClass}>
-                  This is a sample sign up form that I created using HTML and
-                  CSS <br />
-                  NOTE: this is not working it is purely FRONTEND.
+                  <p>
+                    This is a sample sign up form that I created using HTML and
+                    CSS <br />
+                    <span className="text-red-500 font-medium">NOTE</span> :
+                    this is not working it is purely FRONTEND.
+                  </p>
                 </div>
               </a>
             </div>
             <div className="relative overflow-hidden cursor-pointer">
-              <a href="https://youtube.com">
-                <img src={pic2} alt="web2" className={imgClass} />
+              <a href="https://sample-dashboard-emman.netlify.app">
+                <img
+                  src="./sample dashboard.png"
+                  alt="web2"
+                  className={imgClass}
+                />
                 <div className={contentClass}>
-                  This is a sample dashboard that I created using HTML and CSS
-                  <br />
-                  NOTE: this is not working it is purely FRONTEND.
+                  <p>
+                    This is a sample dashboard that I created using HTML and CSS
+                    <br />
+                    <span className="text-red-500 font-medium">NOTE:</span> this
+                    is not working it is purely FRONTEND.
+                  </p>
                 </div>
               </a>
             </div>
@@ -71,44 +71,68 @@ const Projects = () => {
         </div>
 
         {/* react basics */}
-        <div className="shadow-lg p-10 rounded-lg ">
+        <div className="shadow-xl dark:shadow-none p-10 rounded-lg ">
           <h1 className="text-3xl text-center pb-4 dark:text-white">
             React Projects
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="relative overflow-hidden cursor-pointer">
-              <a href="https://youtube.com">
-                <img src={pic3} alt="web3" className={imgClass} />
+              <a href="https://team-member-tracker.netlify.app">
+                <img
+                  src="./Team Member tracker.png"
+                  alt="web3"
+                  className={imgClass}
+                />
                 <div className={contentClass}>
-                  This is a people & role tracker that can be used by the
-                  management on who are working on a specific team
-                  <br />
-                  <br />
-                  Technologies learned: Routing, State
+                  <p>
+                    This is a people & role tracker that can be used by the
+                    management on who are working on a specific team
+                    <br />
+                    <br />
+                    <span className="text-teal-500 font-medium">
+                      Technologies learned
+                    </span>
+                    : Routing, State, File Structure
+                  </p>
                 </div>
               </a>
             </div>
             <div className="relative overflow-hidden cursor-pointer">
-              <a href="https://youtube.com">
-                <img src={pic4} alt="web4" className={imgClass} />
+              <a href="https://ingredients-emman.netlify.app">
+                <img src="./Ingredients.png" alt="web4" className={imgClass} />
                 <div className={contentClass}>
-                  This is a Meal CookBook where the user can search a meal and
-                  can see the recipe to replicate the delicacy
-                  <br />
-                  <br />
-                  Technologies learned: Routing, State, Search API
+                  <p>
+                    This is a Meal CookBook where the user can search a meal and
+                    can see the recipe to replicate the delicacy
+                    <br />
+                    <br />
+                    <span className="text-teal-500 font-medium">
+                      Technologies learned
+                    </span>
+                    : Routing, State, API integration, Search API
+                  </p>
                 </div>
               </a>
             </div>
             <div className="relative overflow-hidden cursor-pointer">
-              <a href="https://youtube.com">
-                <img src={pic5} alt="web5" className={imgClass} />
+              <a href="https://github.com/lolomodown4/Stock-tracker">
+                <img
+                  src="./stock tracker.png"
+                  alt="web5"
+                  className={imgClass}
+                />
                 <div className={contentClass}>
-                  This is a Stock Tracker that can monitor the stock prices in
-                  the market
-                  <br />
-                  <br />
-                  Technologies learned: Routing, State, Search API, graphQL
+                  <p>
+                    This is a Stock Tracker that can monitor the stock prices in
+                    the market
+                    <br />
+                    <br />
+                    <span className="text-teal-500 font-medium">
+                      Technologies learned
+                    </span>
+                    : Routing, State, API integration, Context, Search API,
+                    graphQL
+                  </p>
                 </div>
               </a>
             </div>
@@ -120,20 +144,25 @@ const Projects = () => {
         </div>
 
         {/* cool projects */}
-        <div className="shadow-lg p-10 rounded-lg  ">
+        <div className="shadow-xl dark:shadow-none p-10 rounded-lg  ">
           <h1 className="text-3xl text-center pb-4 dark:text-white">
             Biggest Projects
           </h1>
 
           <div className="relative overflow-hidden cursor-pointer">
-            <a href="https://youtube.com">
-              <img src={pic6} alt="web6" className={imgClass} />
+            <a href="https://youtube-clone-alcoriza.netlify.app">
+              <img src="./youtube clone.png" alt="web6" className={imgClass} />
               <div className={contentClass}>
-                This is a youtube Clone where the user can search, play and know
-                about the channel who posted the video
-                <br />
-                <br />
-                Technologies learned: Routing, State, Search API
+                <p>
+                  This is a youtube Clone where the user can search, play and
+                  know about the channel who posted the video
+                  <br />
+                  <br />
+                  <span className="text-teal-500 font-medium">
+                    Technologies learned
+                  </span>
+                  : Routing, State, API integration,Search API
+                </p>
               </div>
             </a>
           </div>

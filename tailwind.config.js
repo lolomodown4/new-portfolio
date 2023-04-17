@@ -7,9 +7,6 @@ module.exports = {
       colors: {
         "white-rgba": "rgba(255, 255, 255, 0.85)",
         "black-rgba": "rgba(0, 0, 0, 0.8)",
-        /* pede burahin to */
-        tealGradient: "#FFFCFF",
-        greenGradient: "#D5FEFD",
       },
     },
   },
