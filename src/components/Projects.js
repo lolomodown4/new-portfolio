@@ -18,7 +18,7 @@ const Projects = () => {
           React.
         </p>
         <p className="text-md py-2 leading-8 text-black dark:text-white ">
-          Here are my some of my done projects :
+          Here are some of my finished projects :
         </p>
       </div>
 

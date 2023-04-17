@@ -21,7 +21,7 @@ const About = () => {
           </p>
 
           <p className="mt-5">
-            Computer Engineering is the course that I take because it helps me
+            Computer Engineering is the course that I took because it helps me
             understand about Hardware and Software side of the computer.
           </p>
         </div>
