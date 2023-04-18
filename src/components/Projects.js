@@ -1,11 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   const imgClass =
     "block w-full object-cover object-center hover:scale-110 transition ease-in-out delay-150 rounded-md";
   const contentClass =
     "absolute inset-0 text-center p-5 text-white bg-black-rgba dark:bg-white-rgba dark:text-black  flex justify-center items-center transition ease-in-out delay-200 opacity-0 hover:opacity-100 rounded-md flex-wrap overflow-auto";
+
   return (
     <section className="px-10 md:px-20 lg:px-40 ">
       <div>
@@ -24,7 +31,10 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 gap-10">
         {/* html and css */}
-        <div className="py-4 shadow-xl dark:shadow-none p-10 rounded-lg ">
+        <div
+          className="py-4 shadow-xl dark:shadow-none p-10 rounded-lg "
+          data-aos="fade-up"
+        >
           <h1 className="text-3xl text-center pb-4 dark:text-white">
             HTML and CSS basics
           </h1>
@@ -66,12 +76,15 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center" data-aos="fade-up">
           <hr className=" w-96  hidden dark:block border-4 border-cyan-500  rounded-lg "></hr>
         </div>
 
         {/* react basics */}
-        <div className="shadow-xl dark:shadow-none p-10 rounded-lg ">
+        <div
+          className="shadow-xl dark:shadow-none p-10 rounded-lg "
+          data-aos="fade-up"
+        >
           <h1 className="text-3xl text-center pb-4 dark:text-white">
             React Projects
           </h1>
@@ -139,12 +152,15 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center" data-aos="fade-up">
           <hr className=" w-96  hidden dark:block border-4 border-cyan-500  rounded-lg "></hr>
         </div>
 
         {/* cool projects */}
-        <div className="shadow-xl dark:shadow-none p-10 rounded-lg  ">
+        <div
+          className="shadow-xl dark:shadow-none p-10 rounded-lg  "
+          data-aos="fade-up"
+        >
           <h1 className="text-3xl text-center pb-4 dark:text-white">
             Biggest Projects
           </h1>

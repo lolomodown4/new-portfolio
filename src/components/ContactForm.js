@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { HiLocationMarker, HiPhone } from "react-icons/hi";
 import { BsSendFill } from "react-icons/bs";
+import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import Sent from "./Sent";
 
 import { useGlobalContext } from "../hooks/AppContext";
@@ -71,10 +72,10 @@ const ContactUs = () => {
     <div className="md:px-20 lg:px-40 h-[55rem] mt-10">
       <Sent />
       <h3 className="text-3xl text-black dark:text-white">Contact Details</h3>
-      <div className=" my-10 xl:my-10 xl:mx-10 shadow-lg rounded-lg grid grid-cols-1 lg:grid-cols-2 dark:border border-white">
+      <div className=" my-10 xl:my-10 xl:mx-10 shadow-lg rounded-lg grid grid-cols-1 xl:grid-cols-2 dark:border border-white">
         <div className="p-10">
-          <h3 className="text-2xl dark:text-white transition ease-linear delay-150">
-            Email me directly here
+          <h3 className="text-2xl dark:text-white transition ease-linear delay-150 font-bold">
+            Send me a message
           </h3>
           <form ref={form} onSubmit={sendEmail}>
             <div className="py-4">
@@ -85,12 +86,13 @@ const ContactUs = () => {
                 type="text"
                 name="from_name"
                 className=" border border-black w-full p-2 rounded-md "
+                autoComplete="off"
               />
             </div>
 
             <div className="pb-4">
               <label className="block text-xl dark:text-white transition ease-linear delay-150">
-                Email
+                Email <span className="text-red-500">*</span>
               </label>
               <input
                 type="email"
@@ -100,11 +102,12 @@ const ContactUs = () => {
                   handleEmail(e.target.value);
                 }}
                 required
+                autoComplete="off"
               />
             </div>
             <div className="pb-4">
               <label className="block text-xl dark:text-white transition ease-linear delay-150">
-                Subject
+                Subject <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -114,11 +117,12 @@ const ContactUs = () => {
                   handleSubject(e.target.value);
                 }}
                 required
+                autoComplete="off"
               />
             </div>
             <div className="pb-4">
               <label className="block text-xl dark:text-white transition ease-linear delay-150">
-                Message
+                Message <span className="text-red-500">*</span>
               </label>
               <textarea
                 name="message"
@@ -128,6 +132,7 @@ const ContactUs = () => {
                   handleMessage(e.target.value);
                 }}
                 required
+                autoComplete="off"
               />
             </div>
 
@@ -143,19 +148,19 @@ const ContactUs = () => {
           </form>
         </div>
 
-        <div className="bg-teal-500 p-10 hidden lg:block lg:rounded-r-md  ">
-          <h3 className="text-3xl text-white">Other Contact info</h3>
+        <div className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-l p-10 hidden xl:block lg:rounded-r-md">
+          <h3 className="text-3xl text-white font-bold">Other Contact info</h3>
           <div className="py-4 sm:py-8 flex flex-col justify-center h-5/6">
-            <div className="py-8 text-xl lg:text-2xl flex flex-col xl:flex-row items-center">
+            <div className="py-6 text-xl lg:text-2xl flex flex-col xl:flex-row items-center">
               <div className="bg-white rounded-full p-3">
                 <HiLocationMarker size={35} height={35} />
               </div>
               <p className="ml-4 text-white">
-                <span className="font-bold">Address : </span>121 Atlag, Estrella
-                St. Malolos,Bulacan
+                <span className="font-bold">Residing at : </span>
+                Malolos,Bulacan
               </p>
             </div>
-            <div className="py-8 text-xl lg:text-2xl flex flex-col xl:flex-row items-center">
+            <div className="py-6 text-xl lg:text-2xl flex flex-col xl:flex-row items-center">
               <div className="bg-white rounded-full p-3">
                 <HiPhone size={35} />
               </div>
@@ -165,7 +170,7 @@ const ContactUs = () => {
               </p>
             </div>
 
-            <div className=" pb-0 pt-8 sm:pb-8 sm:pt-8 text-xl lg:text-2xl flex flex-col xl:flex-row items-center ">
+            <div className="py-6  text-xl lg:text-2xl flex flex-col xl:flex-row items-center ">
               <div className="bg-white rounded-full p-3">
                 <BsSendFill size={35} />
               </div>
@@ -174,6 +179,38 @@ const ContactUs = () => {
                 <span className="font-bold">Email : </span>
                 alcoriza.emmanuel@gmail.com
               </p>
+            </div>
+
+            <div className=" py-6 text-xl lg:text-2xl flex flex-col xl:flex-row items-center ">
+              <div className="bg-white rounded-full p-3">
+                <AiFillFacebook size={35} />
+              </div>
+
+              <a
+                href="https://www.facebook.com/emmanuel.alcoriza"
+                className="ml-4 text-white"
+              >
+                <span className="font-bold">Facebook : </span>
+                <span className="hover:underline transition ease-in-out delay-500">
+                  Emmanuel Alcoriza
+                </span>
+              </a>
+            </div>
+
+            <div className=" py-6 text-xl lg:text-2xl flex flex-col xl:flex-row items-center ">
+              <div className="bg-white rounded-full p-3">
+                <AiFillLinkedin size={35} />
+              </div>
+
+              <a
+                href="https://www.linkedin.com/in/emmanuel-alcoriza-4765b2184/"
+                className="ml-4 text-white"
+              >
+                <span className="font-bold">LinkedIn : </span>
+                <span className="hover:underline transition ease-in-out delay-500">
+                  Emmanuel Alcoriza
+                </span>
+              </a>
             </div>
           </div>
         </div>

@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-
-/* import design from "../images/design.png";
-import code from "../images/code.png";
-import consulting from "../images/consulting.png"; */
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section className="px-10 md:px-20 lg:px-40">
       <div>
@@ -30,7 +32,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="md:grid md:grid-cols-2 md:gap-10">
+      <div className="md:grid md:grid-cols-2 md:gap-10" data-aos="fade-up">
         <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:border border-white">
           <div className="flex justify-center">
             <img src="./design.png" width={100} height={100} alt="design" />
@@ -89,7 +91,7 @@ const About = () => {
         </div>
       </div>
 
-      <div>
+      <div data-aos="fade-up">
         <h3 className="text-3xl text-black dark:text-white">Work Experience</h3>
         <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:border border-white">
           <div className="flex justify-center">
