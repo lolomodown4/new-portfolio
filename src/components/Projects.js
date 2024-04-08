@@ -187,7 +187,9 @@ const Projects = () => {
                 </div>
               </a>
             </div>
+
             {/* movie app */}
+
             <div className="relative overflow-hidden cursor-pointer">
               <a href="https://portfolio-movie-app.netlify.app">
                 <img
