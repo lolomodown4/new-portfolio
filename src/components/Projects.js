@@ -158,29 +158,58 @@ const Projects = () => {
 
         {/* cool projects */}
         <div
-          className="shadow-xl dark:shadow-none p-10 rounded-lg  "
+          className="shadow-xl dark:shadow-none p-10 rounded-lg "
           data-aos="fade-up"
         >
           <h1 className="text-3xl text-center pb-4 dark:text-white">
             Biggest Projects
           </h1>
 
-          <div className="relative overflow-hidden cursor-pointer">
-            <a href="https://youtube-clone-alcoriza.netlify.app">
-              <img src="./youtube clone.png" alt="web6" className={imgClass} />
-              <div className={contentClass}>
-                <p>
-                  This is a youtube Clone where the user can search, play and
-                  know about the channel who posted the video
-                  <br />
-                  <br />
-                  <span className="text-teal-500 font-medium">
-                    Technologies learned
-                  </span>
-                  : Routing, State, API integration,Search API
-                </p>
-              </div>
-            </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="relative overflow-hidden cursor-pointer">
+              <a href="https://youtube-clone-alcoriza.netlify.app">
+                <img
+                  src="./youtube clone.png"
+                  alt="web6"
+                  className={imgClass}
+                />
+                <div className={contentClass}>
+                  <p>
+                    This is a youtube Clone where the user can search, play and
+                    know about the channel who posted the video
+                    <br />
+                    <br />
+                    <span className="text-teal-500 font-medium">
+                      Technologies learned
+                    </span>
+                    : Routing, State, API integration,Search API
+                  </p>
+                </div>
+              </a>
+            </div>
+            {/* movie app */}
+            <div className="relative overflow-hidden cursor-pointer">
+              <a href="https://portfolio-movie-app.netlify.app">
+                <img
+                  src="./movie portfolio.png"
+                  alt="web6"
+                  className={imgClass}
+                />
+                <div className={contentClass}>
+                  <p>
+                    This is a Movie/Tv-series details app where the user can see
+                    the Trending movies/tv-series and can see additional details
+                    of the show
+                    <br />
+                    <br />
+                    <span className="text-teal-500 font-medium">
+                      Technologies learned
+                    </span>
+                    : Routing, State, API integration
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
