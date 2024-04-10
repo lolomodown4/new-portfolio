@@ -95,8 +95,8 @@ const About = () => {
 
         <div className="md:grid md:grid-cols-2 md:gap-10">
           <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:border border-white">
-            <div className="flex justify-center">
-              <img src="./code.png" width={100} height={100} alt="design" />
+            <div className="flex justify-center mb-4">
+              <img src="./work.png" width={100} height={100} alt="design" />
             </div>
 
             <p className="py-2 text-black dark:text-white transition ease-linear delay-150">
@@ -135,15 +135,15 @@ const About = () => {
           </div>
 
           <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:border border-white">
-            <div className="flex justify-center">
-              <img src="./code.png" width={100} height={100} alt="design" />
+            <div className="flex justify-center mb-4">
+              <img src="./work.png" width={100} height={100} alt="design" />
             </div>
 
             <p className="py-2 text-black dark:text-white transition ease-linear delay-150">
               In my second professional role, I joined NEC Telecom Inc. as a
               Software Design Engineer I (SDE I) for 10 months. This position
               afforded me a comprehensive understanding of the application
-              development lifecycle, from conception to deployment. My
+              development lifecycle, from designing to deployment. My
               responsibilities encompassed the design, development, and testing
               phases of various applications, providing me with invaluable
               hands-on experience in software engineering.

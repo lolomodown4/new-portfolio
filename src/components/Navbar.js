@@ -34,7 +34,7 @@ function Navbar() {
         </li>
         <li>
           <a
-            href="./CV_Emmanuel_P_Alcoriza.pdf"
+            href="./CV_Emmanuel_Alcoriza.pdf"
             download
             className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white hover:bg-gradient-to-l hover:text-pink-500 px-4 py-2 rounded-md ml-8 transition ease-linear delay-150"
           >
